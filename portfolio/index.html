@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anubhab Mukherjee — Web, Embedded &amp; Network Portfolio</title>
+<meta name="description" content="Anubhab Mukherjee is an Electronics and Communication Engineering graduate building interactive web projects, embedded prototypes, and networking skills for IT and development roles.">
+<script>document.documentElement.classList.add("js-entrance","js-scroll-reveal");if(matchMedia("(prefers-reduced-motion:reduce)").matches)document.documentElement.classList.remove("js-entrance","js-scroll-reveal");</script>
+<style>
+@font-face{font-family:'InterV';src:url(assets/aerofold-inter-variable.woff2) format('woff2'),url('https://rsms.me/inter/font-files/InterVariable.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:block}
+@property --u{syntax:"<length>";inherits:true;initial-value:1px}
+:root{--w-display:500;--w-body:400;--w-brand:600;--w-nav:515;--w-action:620;--w-chip:420;--w-caption:400;--accent-gradient:linear-gradient(100deg,#e4fbff 0%,#a8edff 52%,#a9caff 100%);--capsule-fill:linear-gradient(115deg,rgba(0,117,210,.96),rgba(0,174,205,.94));--button-gradient:linear-gradient(100deg,#168fe0 0%,#08c2dc 52%,#557df2 100%);--e-reveal:cubic-bezier(.16,1,.3,1);--e-settle:cubic-bezier(.22,1,.36,1)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;margin:0;padding:0}
+body{margin:0;padding:0;background:#10263d;color:#fff;overflow-x:hidden;font-family:'InterV',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;font-optical-sizing:none;font-variation-settings:"opsz" 32;font-synthesis:none}
+h1,h2,p{margin:0}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;border:0;background:none;padding:0;cursor:pointer}
+@media (prefers-reduced-motion:reduce){*{transition:none !important}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.hero-section{position:relative;z-index:1;height:100dvh;overflow:hidden;isolation:isolate;background:transparent;font-size:min(max(calc(100vw / 14.4),calc(100svh / 8.62)),calc(100svh / 6.8),175px);--u:.01em}
+.hero-section [hidden]{display:none !important}
+.hero-section a:focus-visible,.hero-section button:focus-visible{outline:calc(2 * var(--u)) solid #fff;outline-offset:calc(5 * var(--u))}
+.hero-section__bg{position:fixed;inset:0;z-index:0;overflow:hidden;background:#0b8ed2;pointer-events:none}
+.hero-section__bg svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.stage{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;padding:calc(30.96 * var(--u)) calc(32 * var(--u)) calc(114.82 * var(--u))}
+.head{display:flex;align-items:center;height:calc(41.76 * var(--u));flex:none}
+.logo{display:flex;align-items:center;gap:calc(9.46 * var(--u));position:relative;top:calc(.28 * var(--u));white-space:nowrap;font-size:calc(21.2 * var(--u));font-weight:var(--w-brand);line-height:1;letter-spacing:-.004em;transition:transform .22s var(--e-settle),filter .22s ease}
+.logo:hover{transform:translateY(calc(-1.5 * var(--u)));filter:drop-shadow(0 0 calc(8 * var(--u)) rgba(255,123,170,.5))}
+.logo-mark{width:calc(20 * var(--u));height:calc(20 * var(--u));flex:none}
+.sp{min-width:calc(12 * var(--u));flex:1 1 0}.sp-a{flex-grow:1.5563}.sp-b{flex-grow:1}
+#nav{display:flex;align-items:center;gap:calc(3 * var(--u));padding:calc(5 * var(--u));border:1px solid rgba(190,239,255,.46);border-radius:calc(28 * var(--u));background:var(--capsule-fill);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 9px 26px rgba(2,43,91,.24);backdrop-filter:blur(14px) saturate(130%);-webkit-backdrop-filter:blur(14px) saturate(130%);font-size:calc(14.5 * var(--u));font-weight:600;white-space:nowrap}
+#nav a{position:relative;padding:calc(9 * var(--u)) calc(11 * var(--u));border-radius:calc(20 * var(--u));color:rgba(255,255,255,.94);text-shadow:0 1px 8px rgba(0,36,83,.24);transition:color .2s ease,background .2s ease,transform .2s var(--e-settle),box-shadow .2s ease}
+#nav a::after{content:"";position:absolute;left:25%;right:75%;bottom:calc(3 * var(--u));height:calc(2 * var(--u));border-radius:99px;background:var(--accent-gradient);transition:left .22s var(--e-settle),right .22s var(--e-settle)}
+#nav a:hover{color:#fff;background:rgba(181,232,255,.13);transform:translateY(calc(-1 * var(--u)));box-shadow:inset 0 0 0 1px rgba(206,243,255,.10)}
+#nav a:hover::after{left:22%;right:22%}
+.head-cta{width:calc(189.72 * var(--u));height:calc(41.76 * var(--u));border-radius:calc(20.88 * var(--u));background:var(--button-gradient);color:#fff;font-size:calc(16 * var(--u));font-weight:var(--w-action);letter-spacing:-.024em;display:flex;align-items:center;justify-content:center;box-shadow:0 5px 18px rgba(37,136,194,.24);transition:transform .22s var(--e-settle),box-shadow .22s ease,filter .22s ease;white-space:nowrap}
+.head-cta:hover{transform:translateY(calc(-2 * var(--u))) scale(1.025);box-shadow:0 9px 25px rgba(37,136,194,.38);filter:saturate(1.14)}
+#menuBtn{display:none}
+.vsp{flex:1 1 0;min-height:calc(16 * var(--u));min-width:0}.vsp-a{flex-grow:2.4467}.vsp-b{flex-grow:1}
+.hero{flex:none}
+.badge{position:relative;display:block;width:calc(291.06 * var(--u));height:calc(23.94 * var(--u));border-radius:calc(11.97 * var(--u));background:rgba(255,255,255,.18);backdrop-filter:blur(10px) saturate(115%);-webkit-backdrop-filter:blur(10px) saturate(115%)}
+.badge::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;pointer-events:none;background:linear-gradient(155deg,rgba(112,242,255,.98) 0%,rgba(104,234,255,.95) 42%,rgba(87,218,255,.88) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask-composite:exclude}
+.chip{position:absolute;left:calc(4.14 * var(--u));top:calc(3.7 * var(--u));width:calc(41.76 * var(--u));height:calc(16.6 * var(--u));border-radius:calc(8.3 * var(--u));background:linear-gradient(110deg,#d8fbff,#7ceaff);color:#0874b5;font-size:calc(11.95 * var(--u));font-weight:var(--w-chip);line-height:1;display:flex;align-items:center;justify-content:center;box-shadow:0 0 calc(12 * var(--u)) rgba(83,224,255,.34)}
+.badge-text{position:absolute;left:calc(53.3 * var(--u));top:0;height:100%;display:flex;align-items:center;font-size:calc(12.75 * var(--u));font-weight:400;letter-spacing:.001em;color:rgba(255,255,255,.96);white-space:nowrap}
+h1{width:min(calc(800 * var(--u)),100%);margin-top:calc(23.62 * var(--u));font-family:'Trebuchet MS','Segoe UI',sans-serif;font-size:calc(64 * var(--u));line-height:calc(70 * var(--u));font-weight:var(--w-display);letter-spacing:-.035em}
+.name-accent{width:max-content;max-width:100%;padding-right:.16em;font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:600;letter-spacing:-.055em;background:var(--accent-gradient);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.hero h1 .ln:not(:first-child) .ln-i{font-size:.82em}
+.ln{display:block;overflow:clip;overflow-clip-margin:calc(6 * var(--u));white-space:nowrap}.ln-i{display:block}
+.lede{width:min(calc(478 * var(--u)),100%);margin-top:calc(5.49 * var(--u));font-size:calc(16 * var(--u));line-height:calc(17.9 * var(--u));font-weight:var(--w-body);letter-spacing:-.015em}
+.actions{display:flex;gap:calc(16.2 * var(--u));margin-top:calc(23.27 * var(--u))}
+.action{height:calc(41.76 * var(--u));border:1px solid rgba(190,239,255,.46);border-radius:calc(20.88 * var(--u));background:var(--capsule-fill);color:#fff;font-size:calc(16 * var(--u));font-weight:var(--w-action);letter-spacing:-.026em;display:flex;align-items:center;justify-content:center;white-space:nowrap;box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 5px 16px rgba(2,43,91,.22);backdrop-filter:blur(12px) saturate(130%);-webkit-backdrop-filter:blur(12px) saturate(130%);transition:transform .22s var(--e-settle),box-shadow .22s ease,filter .22s ease}
+.action:hover{transform:translateY(calc(-2 * var(--u))) scale(1.025);filter:brightness(1.12);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 9px 24px rgba(2,43,91,.34)}
+.action-light{width:calc(140.94 * var(--u))}
+.action-dark{width:calc(124.74 * var(--u))}
+.partners{flex:none}
+.partner-label{font-size:calc(12.6 * var(--u));font-weight:var(--w-caption);line-height:1.2;letter-spacing:.0005em;color:rgba(255,255,255,.86)}
+.plogos{display:flex;align-items:flex-start;gap:calc(26 * var(--u));margin-top:calc(10 * var(--u));color:rgba(193,238,255,.9)}
+.pl{display:flex;align-items:center;gap:calc(8 * var(--u));color:#fff;font-size:calc(18 * var(--u));line-height:1.05;font-weight:600;white-space:nowrap;min-width:0;text-shadow:0 1px 4px rgba(0,35,76,.58);transition:transform .2s var(--e-settle),color .2s ease}
+.pl:hover{transform:translateY(calc(-2 * var(--u)));color:#e4fbff}
+.pl svg{width:calc(26 * var(--u));height:calc(26 * var(--u));flex:none;filter:drop-shadow(0 1px 2px rgba(0,45,90,.4))}
+.dialog-wrap{display:contents}
+.preview-dialog{position:fixed;inset:0;margin:auto;width:min(calc(480 * var(--u)),calc(100vw - calc(40 * var(--u))));max-height:calc(100dvh - calc(40 * var(--u)));padding:calc(32 * var(--u));border-radius:calc(24 * var(--u));border:1px solid rgba(150,240,255,.65);background:rgba(5,75,120,.97);color:#fff;box-shadow:0 24px 80px rgba(0,30,60,.30);font-size:calc(16 * var(--u));line-height:1.5;overflow:auto}
+.preview-dialog::backdrop{background:rgba(0,27,47,.42);backdrop-filter:blur(8px)}
+.dialog-eyebrow{font-size:calc(11 * var(--u));letter-spacing:.12em;color:#b9edff;margin-bottom:calc(16 * var(--u))}
+.preview-dialog h2{font-size:calc(30 * var(--u));line-height:1.1;font-weight:400;letter-spacing:-.02em}
+.dialog-body{margin-top:calc(18 * var(--u))}
+.dialog-body ul{padding-left:calc(20 * var(--u));margin:0}.dialog-body li+li{margin-top:calc(10 * var(--u))}
+.dialog-body a{text-decoration:underline;text-underline-offset:calc(3 * var(--u))}
+.dialog-close{margin-top:calc(26 * var(--u));border-radius:calc(24 * var(--u));padding:calc(11 * var(--u)) calc(26 * var(--u));background:var(--button-gradient);color:#fff;font-weight:var(--w-action);transition:transform .2s var(--e-settle),box-shadow .2s ease}
+.dialog-close:hover{transform:translateY(-2px);box-shadow:0 7px 20px rgba(37,136,194,.32)}
+
+.portfolio-content{position:relative;z-index:1;isolation:isolate;padding:0 32px 72px;background:linear-gradient(180deg,rgba(16,38,61,0) 0%,rgba(18,60,98,.72) 280px,rgba(38,59,114,.78) 47%,rgba(19,86,95,.78) 100%);color:#fff}
+.portfolio-content::before{content:"";position:absolute;z-index:0;inset:0;pointer-events:none;background:radial-gradient(ellipse 700px 500px at 10% 9%,rgba(0,196,238,.46),transparent 72%),radial-gradient(ellipse 760px 580px at 89% 31%,rgba(116,82,255,.39),transparent 74%),radial-gradient(ellipse 700px 500px at 13% 61%,rgba(0,137,255,.34),transparent 74%),radial-gradient(ellipse 800px 600px at 89% 88%,rgba(0,207,171,.32),transparent 72%)}
+.portfolio-section{position:relative;z-index:1;width:min(100%,1100px);margin:0 auto;padding:92px 0;scroll-margin-top:28px}
+.section-heading{margin:0;font-size:clamp(30px,4vw,44px);font-weight:600;line-height:1.1;letter-spacing:-.04em}
+.section-heading span{margin-right:10px;color:#a8edff;font-family:Georgia,'Times New Roman',serif;font-style:italic}
+.section-intro{max-width:730px;margin-top:24px;color:rgba(255,255,255,.88);font-size:clamp(16px,1.8vw,19px);line-height:1.8}
+.content-panel,.info-card,.project-card{border:1px solid rgba(190,239,255,.24);border-radius:22px;background:linear-gradient(135deg,rgba(6,65,112,.66),rgba(5,50,93,.54));box-shadow:0 18px 50px rgba(2,35,71,.16),inset 0 1px 0 rgba(255,255,255,.08);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.content-panel{padding:clamp(24px,4vw,40px)}
+.skills-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:34px}
+.info-card{padding:24px}
+.info-card h3,.project-card h3{margin:0;color:#fff;font-size:19px;font-weight:600;line-height:1.35;letter-spacing:-.02em}
+.skill-tags{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0 0;padding:0;list-style:none}
+.skill-tags li{padding:7px 11px;border:1px solid rgba(111,220,255,.42);border-radius:999px;background:linear-gradient(120deg,rgba(0,145,220,.28),rgba(0,198,218,.18));color:#e6faff;font-size:13px;box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}
+.skill-tags li:hover{border-color:rgba(145,238,255,.78);background:linear-gradient(120deg,rgba(0,159,237,.48),rgba(0,213,224,.34))}
+.experience-date,.project-type{margin-top:10px;color:#b8eaff;font-size:14px;font-weight:550}
+.experience-list{display:grid;gap:12px;margin:22px 0 0;padding-left:20px;color:rgba(255,255,255,.86);line-height:1.7}
+.projects-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:34px}
+.project-card{display:flex;flex-direction:column;align-items:flex-start;min-height:100%;padding:25px;transition:transform .24s var(--e-settle),border-color .24s ease,box-shadow .24s ease}
+.project-card:hover{transform:translateY(-5px);border-color:rgba(168,237,255,.58);box-shadow:0 24px 56px rgba(2,35,71,.24),inset 0 1px 0 rgba(255,255,255,.12)}
+.project-card p{margin:14px 0 0;color:rgba(255,255,255,.82);line-height:1.7}
+.project-card .skill-tags{margin-top:18px}
+.project-links{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:auto;padding-top:22px}
+.project-links a,.contact-card a{color:#b8eaff;text-decoration:underline;text-decoration-color:rgba(184,234,255,.45);text-underline-offset:4px}
+.project-links a:hover,.contact-card a:hover{color:#fff;text-decoration-color:currentColor}
+.education-card{margin-top:34px}
+.education-card p{margin:12px 0 0;color:rgba(255,255,255,.84);line-height:1.7}
+.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:34px}
+.contact-card{display:flex;flex-direction:column;gap:9px;min-width:0}
+.contact-card span{color:#b8eaff;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.contact-card a,.contact-card p{overflow-wrap:anywhere;color:rgba(255,255,255,.94);font-size:16px;line-height:1.5}
+.scroll-reveal{opacity:1;transform:none}
+.js-scroll-reveal .scroll-reveal:not(.is-visible){opacity:0;transform:translateY(26px)}
+.scroll-reveal.is-visible{opacity:1;transform:translateY(0);transition:opacity .7s var(--e-reveal) var(--reveal-delay,0ms),transform .8s var(--e-reveal) var(--reveal-delay,0ms)}
+@media (prefers-reduced-motion:reduce){.js-scroll-reveal .scroll-reveal:not(.is-visible){opacity:1;transform:none;transition:none}}
+
+@keyframes ent-line{from{transform:translateY(105%)}to{transform:translateY(0)}}
+@keyframes ent-rise{from{opacity:0;transform:translateY(var(--rise))}to{opacity:1;transform:none}}
+@keyframes ent-settle{from{opacity:0;transform:translateY(calc(10 * var(--u))) scale(.97)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:no-preference){
+.js-entrance .hero-section [data-e]{--rise:var(--r,calc(10 * var(--u)));animation:var(--k,ent-rise) var(--t,.6s) var(--ez,var(--e-reveal)) var(--d,0s) both;will-change:transform,opacity}
+.js-entrance .hero-section h1[data-e]{animation:none;will-change:auto}
+.js-entrance .hero-section .ln-i{animation:ent-line .95s var(--e-reveal) var(--d) both;will-change:transform}
+}
+
+@media (max-aspect-ratio:1/1){
+.hero-section{font-size:min(calc(100vw / 3.9),calc((100vw + 780px) / 11.7),calc(100svh / 4.70));--u:.01em}
+.hero-section__bg svg{transform:scale(1.26);transform-origin:50% 100%}
+.hero{margin-left:0}
+.hero-section__bg::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(4,86,140,.12) 0%,rgba(4,86,140,0) 18%,rgba(4,86,140,0) 40%,rgba(5,90,145,.1) 62%,rgba(6,94,150,.18) 100%)}
+.stage{padding:calc(22 * var(--u)) calc(20 * var(--u)) calc(26 * var(--u))}
+.head{height:calc(40 * var(--u));justify-content:space-between}
+.logo{top:0;gap:calc(9 * var(--u))}.logo-mark{width:calc(22 * var(--u));height:calc(22 * var(--u))}
+.sp,.head-cta{display:none}
+#menuBtn{display:flex;align-items:center;justify-content:center;width:calc(40 * var(--u));height:calc(40 * var(--u));border-radius:50%;background:rgba(255,255,255,.18);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:inset 0 0 0 1px rgba(150,240,255,.6)}
+#menuBtn svg{width:calc(17 * var(--u));height:calc(12 * var(--u))}
+#nav{display:none}
+#nav.open{display:flex;flex-direction:column;gap:0;position:absolute;z-index:5;left:calc(20 * var(--u));right:calc(20 * var(--u));top:calc(66 * var(--u));padding:calc(8 * var(--u));border-radius:calc(16 * var(--u));background:rgba(255,255,255,.16);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);box-shadow:0 12px 34px rgba(3,58,92,.22)}
+#nav.open::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;pointer-events:none;background:linear-gradient(155deg,rgba(112,242,255,.98),rgba(87,218,255,.88));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask-composite:exclude}
+#nav.open a{padding:calc(11 * var(--u)) calc(12 * var(--u));border-radius:calc(10 * var(--u))}#nav.open a:hover{background:rgba(255,255,255,.1)}
+.vsp{min-height:calc(10 * var(--u))}.vsp-a{flex-grow:3}
+.badge{display:flex;align-items:center;width:fit-content;max-width:100%;height:calc(28 * var(--u));border-radius:calc(14 * var(--u));padding:0 calc(12 * var(--u)) 0 calc(4 * var(--u));gap:calc(8 * var(--u))}
+.chip,.badge-text{position:static}
+.chip{width:auto;height:calc(20 * var(--u));border-radius:calc(10 * var(--u));padding:0 calc(9 * var(--u));font-size:calc(12 * var(--u))}
+.badge-text{height:auto;font-size:calc(12.5 * var(--u))}
+h1{width:calc(344 * var(--u));margin-top:calc(18 * var(--u));font-size:calc(34 * var(--u));line-height:calc(36.7 * var(--u));letter-spacing:-.03em}
+.name-accent{font-size:.95em}
+.ln,.ln-i{display:inline;overflow:visible;white-space:normal}
+.lede{width:calc(350 * var(--u));margin-top:calc(14 * var(--u));font-size:calc(15 * var(--u));line-height:calc(21.75 * var(--u));color:rgba(255,255,255,.95)}
+.actions{margin-top:calc(22 * var(--u));gap:calc(12 * var(--u))}
+.action{height:calc(46 * var(--u));border-radius:calc(23 * var(--u));font-size:calc(15.5 * var(--u));padding:0 calc(26 * var(--u))}.action-light,.action-dark{width:auto}
+.plogos{margin-top:calc(12 * var(--u));gap:calc(8 * var(--u)) calc(12 * var(--u));flex-wrap:wrap;align-items:center;justify-content:flex-start}
+.pl{font-size:calc(12 * var(--u));gap:calc(4 * var(--u))}.pl svg{width:calc(16 * var(--u));height:calc(16 * var(--u))}
+.partner-label{font-size:calc(12.6 * var(--u))}
+@media (prefers-reduced-motion:no-preference){
+.js-entrance .hero-section .ln-i{animation:none}
+.js-entrance .hero-section h1[data-e]{--rise:calc(14 * var(--u));animation:ent-rise .75s var(--e-reveal) .34s both;will-change:transform,opacity}
+}
+}
+@media (max-width:700px){
+.portfolio-content{padding:0 20px 40px}
+.portfolio-section{padding:68px 0}
+.skills-grid,.projects-grid,.contact-grid{grid-template-columns:1fr}
+.project-card{min-height:0}
+}
+</style>
+</head>
+<body>
+<div class="hero-section__bg" aria-hidden="true"><svg id="scene" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice"></svg></div>
+<section class="hero-section" id="top" aria-labelledby="hero-title">
+<div class="stage">
+<header class="head">
+<div class="logo" data-e style="--t:.7s;--r:calc(10 * var(--u))"><svg class="logo-mark" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M1 9L10 12V19Z" fill="currentColor" fill-opacity=".85"/><path d="M10 1L19 9L10 19L1 9Z" stroke="currentColor" stroke-width="1.5"/><path d="M10 1V19M1 9L10 12" stroke="currentColor" stroke-width="1"/></svg><span>ANUBHAB</span></div>
+<span class="sp sp-a" aria-hidden="true"></span>
+<nav id="nav" aria-label="Main navigation">
+<a href="#about" data-e style="--d:.06s">About</a>
+<a href="#experience" data-e style="--d:.095s">Experience</a>
+<a href="#projects" data-e style="--d:.13s">Projects</a>
+<a href="#skills" data-e style="--d:.165s">Skills</a>
+<a href="#education" data-e style="--d:.2s">Education</a>
+<a href="#contact" data-e style="--d:.235s">Contact</a>
+</nav>
+<span class="sp sp-b" aria-hidden="true"></span>
+<a class="head-cta" href="#contact" data-e style="--k:ent-settle;--ez:var(--e-settle);--d:.18s">Get in Touch</a>
+<button id="menuBtn" type="button" aria-controls="nav" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 17 12" fill="currentColor" aria-hidden="true"><path d="M0 0h17v1.9H0z M0 5.05h17v1.9H0z M0 10.1h17V12H0z"/></svg></button>
+</header>
+<span class="vsp vsp-a" aria-hidden="true"></span>
+<section class="hero">
+<div class="badge" data-e style="--d:.22s;--r:calc(12 * var(--u))"><span class="chip">Open</span><span class="badge-text">Entry-level IT, network &amp; web roles</span></div>
+<h1 id="hero-title" data-e style="--r:calc(14 * var(--u))"><span class="ln"><span class="ln-i name-accent" style="--d:.34s">Anubhab Mukherjee</span></span> <span class="ln"><span class="ln-i" style="--d:.42s">Builds Web Worlds &amp;</span></span> <span class="ln"><span class="ln-i" style="--d:.5s">Connected Systems</span></span></h1>
+<p class="lede" data-e style="--t:.7s;--d:.68s;--r:calc(12 * var(--u))">B.Tech ECE graduate crafting interactive browser projects, embedded prototypes, and networking know-how for IT support, security, and development teams.</p>
+<div class="actions">
+<a class="action action-light" href="#contact" data-e style="--k:ent-settle;--ez:var(--e-settle);--d:.84s">Get in Touch</a>
+<a class="action action-dark" href="#projects" data-e style="--k:ent-settle;--ez:var(--e-settle);--d:.9s">View Projects</a>
+</div>
+</section>
+<span class="vsp vsp-b" aria-hidden="true"></span>
+<footer class="partners" aria-label="Selected projects">
+<p class="partner-label" data-e style="--d:1s;--r:calc(8 * var(--u))">Selected projects:</p>
+<div class="plogos" id="plogos"></div>
+</footer>
+</div>
+<dialog class="preview-dialog" id="previewDialog" aria-labelledby="dialogTitle" aria-describedby="dialogBody">
+<p class="dialog-eyebrow">ANUBHAB MUKHERJEE / PORTFOLIO</p>
+<h2 id="dialogTitle"></h2>
+<div class="dialog-body" id="dialogBody"></div>
+<button class="dialog-close" id="dialogClose" type="button" autofocus>Close</button>
+</dialog>
+</section>
+<main class="portfolio-content" id="main">
+<section class="portfolio-section" id="about" aria-labelledby="about-heading">
+<h2 class="section-heading scroll-reveal" id="about-heading"><span>/</span>About</h2>
+<p class="section-intro scroll-reveal">I graduated in July 2026 with a B.Tech in Electronics and Communication Engineering from RCC Institute of Information Technology (RCCIIT), Kolkata. I’ve built browser-based websites and games, a Flask application, and a low-cost ECG prototype. I’m looking for entry-level roles in IT support, network administration, cybersecurity, and web/software development.</p>
+</section>
+<section class="portfolio-section" id="skills" aria-labelledby="skills-heading">
+<h2 class="section-heading scroll-reveal" id="skills-heading"><span>/</span>Skills</h2>
+<div class="skills-grid">
+<article class="info-card scroll-reveal" style="--reveal-delay:0ms"><h3>Programming &amp; Web</h3><ul class="skill-tags"><li>JavaScript</li><li>Python</li><li>C++</li><li>SQL</li><li>HTML</li><li>CSS</li><li>Flask</li><li>Three.js</li></ul></article>
+<article class="info-card scroll-reveal" style="--reveal-delay:90ms"><h3>Embedded Systems</h3><ul class="skill-tags"><li>ESP32</li><li>AD8232 ECG sensor</li><li>Arduino IDE</li><li>Analog signal acquisition</li><li>Serial communication</li></ul></article>
+<article class="info-card scroll-reveal" style="--reveal-delay:180ms"><h3>Networking &amp; Security</h3><ul class="skill-tags"><li>IP addressing</li><li>Routing</li><li>Switching</li><li>DNS</li><li>DHCP</li><li>Network troubleshooting</li><li>Networking fundamentals</li></ul></article>
+<article class="info-card scroll-reveal" style="--reveal-delay:270ms"><h3>Tools</h3><ul class="skill-tags"><li>Git</li><li>GitHub</li><li>Vercel</li></ul></article>
+</div>
+</section>
+<section class="portfolio-section" id="experience" aria-labelledby="experience-heading">
+<h2 class="section-heading scroll-reveal" id="experience-heading"><span>/</span>Experience</h2>
+<article class="content-panel scroll-reveal" style="margin-top:34px">
+<h3>Information Systems Intern — Haldia Petrochemicals Limited, Kolkata</h3>
+<p class="experience-date">July – August 2025</p>
+<ul class="experience-list"><li>Studied networking concepts including IP addressing, routing, switching, DNS, and DHCP, with exposure to routine IT support.</li><li>Assisted with basic network troubleshooting and technical support, including diagnosing and documenting user-facing issues.</li><li>Learned networking fundamentals, vulnerability assessment, and security best practices; prepared technical reports and collaborated with the team.</li></ul>
+</article>
+</section>
+<section class="portfolio-section" id="projects" aria-labelledby="projects-heading">
+<h2 class="section-heading scroll-reveal" id="projects-heading"><span>/</span>Projects</h2>
+<div class="projects-grid">
+<article class="project-card scroll-reveal" style="--reveal-delay:0ms"><p class="project-type">Web experiences</p><h3>Pepsi &amp; Starbucks Interactive Landing Pages</h3><p>Two responsive brand-inspired landing pages with product selection that changes the featured drink image and page theme.</p><ul class="skill-tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><div class="project-links"><a href="https://github.com/buzin8/pepsi" target="_blank" rel="noopener">Pepsi GitHub</a><a href="https://pepsi-ten-jet.vercel.app/" target="_blank" rel="noopener">Pepsi Live Demo</a><a href="https://github.com/buzin8/starbucks" target="_blank" rel="noopener">Starbucks GitHub</a><a href="https://starbucks-buzin.vercel.app/" target="_blank" rel="noopener">Starbucks Live Demo</a></div></article>
+<article class="project-card scroll-reveal" style="--reveal-delay:90ms"><p class="project-type">Interactive web</p><h3>Spider-Man Cinematic Fan Page</h3><p>A responsive cinematic fan page with animated canvas particles and an interactive scene switch between Homecoming and Brand New Day.</p><ul class="skill-tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Canvas</li></ul><div class="project-links"><a href="https://github.com/buzin8/Spiderman" target="_blank" rel="noopener">GitHub</a><a href="https://spiderman-orpin-delta.vercel.app/" target="_blank" rel="noopener">Live Demo</a></div></article>
+<article class="project-card scroll-reveal" style="--reveal-delay:0ms"><p class="project-type">Browser game</p><h3>LEGO Rush — Browser Endless Runner</h3><p>An arcade-style runner with lane controls, jumping, train obstacles, coin collection, and a hoverboard mechanic in a Tokyo-inspired scene.</p><ul class="skill-tags"><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Three.js</li></ul><div class="project-links"><a href="https://github.com/buzin8/LEGO_RUSH" target="_blank" rel="noopener">GitHub</a><a href="https://legorush.vercel.app" target="_blank" rel="noopener">Live Demo</a></div></article>
+<article class="project-card scroll-reveal" style="--reveal-delay:90ms"><p class="project-type">Interactive website</p><h3>Buzin’s Diner — Interactive Restaurant Website</h3><p>A welcoming restaurant website where visitors can explore the menu and dish details.</p><ul class="skill-tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><div class="project-links"><a href="https://github.com/buzin8/BUZIN-S_DINER" target="_blank" rel="noopener">GitHub</a><a href="https://buzin-sdiner-ashen.vercel.app/" target="_blank" rel="noopener">Live Demo</a></div></article>
+<article class="project-card scroll-reveal" style="--reveal-delay:0ms"><p class="project-type">Python game</p><h3>Lucky Slots — Browser Slot Machine</h3><p>A Flask-backed slot game with adjustable bets and paylines, balance tracking, randomized spins, and winning-line evaluation.</p><ul class="skill-tags"><li>Python</li><li>Flask</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><div class="project-links"><a href="https://github.com/buzin8/SLOT_-MACHINE" target="_blank" rel="noopener">GitHub</a><a href="https://slot-machine-slotmachine.vercel.app" target="_blank" rel="noopener">Live Demo</a></div></article>
+<article class="project-card scroll-reveal" style="--reveal-delay:90ms"><p class="project-type">Capstone · Embedded systems</p><h3>Low-Cost ECG Monitoring System</h3><p>A prototype interfacing an AD8232 ECG sensor with an ESP32 for real-time analog signal acquisition, displaying the waveform in Arduino IDE Serial Plotter via serial communication.</p><ul class="skill-tags"><li>ESP32</li><li>AD8232</li><li>Arduino IDE</li></ul></article>
+</div>
+</section>
+<section class="portfolio-section" id="education" aria-labelledby="education-heading">
+<h2 class="section-heading scroll-reveal" id="education-heading"><span>/</span>Education</h2>
+<article class="content-panel education-card scroll-reveal">
+<h3>RCC Institute of Information Technology (RCCIIT), Kolkata</h3>
+<p>B.Tech in Electronics and Communication Engineering</p>
+<p>Graduated July 2026 · CGPA 7.15</p>
+</article>
+</section>
+<section class="portfolio-section" id="contact" aria-labelledby="contact-heading">
+<h2 class="section-heading scroll-reveal" id="contact-heading"><span>/</span>Contact</h2>
+<div class="contact-grid">
+<article class="content-panel contact-card scroll-reveal"><span>Email</span><a href="mailto:anubhabmukherjee87@gmail.com">anubhabmukherjee87@gmail.com</a></article>
+<article class="content-panel contact-card scroll-reveal" style="--reveal-delay:80ms"><span>Phone</span><a href="tel:+919874681046">+91 9874681046</a></article>
+<article class="content-panel contact-card scroll-reveal" style="--reveal-delay:160ms"><span>GitHub</span><a href="https://github.com/buzin8" target="_blank" rel="noopener">github.com/buzin8</a></article>
+<article class="content-panel contact-card scroll-reveal" style="--reveal-delay:240ms"><span>Location</span><p>Kolkata, West Bengal</p></article>
+</div>
+</section>
+</main>
+<script>
+(function(){
+var NS="http://www.w3.org/2000/svg",svg=document.getElementById("scene"),reduce=matchMedia("(prefers-reduced-motion:reduce)");
+function rng(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+var R=rng(7);
+function sh(c,k){var n=parseInt(c.slice(1),16),f=k>0?255:0,a=Math.abs(k)*(k<0?.5:1);return"rgb("+[n>>16,n>>8&255,n&255].map(function(v){return Math.round(v+(f-v)*a)})+")"}
+var PAL=["#ff6b57","#ff893f","#ffbd45","#ffe77d","#fff8e8","#ffdada","#f05c9e","#c7b4ff","#65dcff","#5482f2","#ff6251","#fff8e8"];
+var ys=[0,.2,.35,.5,.65,.8,1],xs=[1.05,.93,.84,.74,.66,.57,.43];
+function L(f){f=Math.max(0,Math.min(1,f));for(var i=1;i<ys.length;i++)if(f<=ys[i]){var t=(f-ys[i-1])/(ys[i]-ys[i-1]);return xs[i-1]+(xs[i]-xs[i-1])*t}return xs[6]}
+var s='<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#287fe0"/><stop offset=".5" stop-color="#18a9e3"/><stop offset="1" stop-color="#76d6ff"/></linearGradient><linearGradient id="base" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d4488b"/><stop offset="1" stop-color="#526af2"/></linearGradient><filter id="cl" x="-30%" y="-100%" width="160%" height="300%"><feGaussianBlur stdDeviation="22"/></filter><filter id="shf" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3.2"/></filter></defs><rect width="1920" height="1080" fill="url(#sky)"/>';
+s+='<g fill="#fff" filter="url(#cl)" opacity=".78"><ellipse cx="180" cy="1050" rx="420" ry="46"/><ellipse cx="520" cy="1085" rx="360" ry="40"/><ellipse cx="60" cy="930" rx="200" ry="26" opacity=".6"/><ellipse cx="860" cy="1075" rx="260" ry="30"/></g>';
+var bp="";for(var f=.15;f<=1.06;f+=.05)bp+=(L(f)*1920+34)+","+(f*1080)+" ";
+s+='<polygon points="'+bp+'1990,1100 1990,160" fill="url(#base)"/><g id="mass">';
+var items=[],i;
+for(i=0;i<1300;i++){var y=150+R()*950,fy=y/1080,e=L(fy)*1920,x=e-14+Math.pow(R(),1.15)*(2010-e+14),sz=20+R()*(26+62*fy);items.push({x:x,y:y,s:sz,c:PAL[R()*PAL.length|0],a:R()*360,t:R(),z:sz+R()*34})}
+items.sort(function(a,b){return a.z-b.z});
+items.forEach(function(o){var c=o.c,r=o.a*Math.PI/180,co=Math.cos(r),si=Math.sin(r);
+function P(u,v){return(o.x+u*co-v*si).toFixed(1)+","+(o.y+u*si+v*co).toFixed(1)}
+if(o.t<.82){var h=o.s*.46;s+='<polygon points="'+P(o.s,0)+" "+P(0,-h)+" "+P(-o.s*.8,0)+'" fill="'+sh(c,.2)+'"/><polygon points="'+P(o.s,0)+" "+P(0,h)+" "+P(-o.s*.8,0)+'" fill="'+sh(c,-.26)+'"/><path d="M'+P(o.s,0)+"L"+P(-o.s*.8,0)+'" stroke="rgba(255,255,255,.35)" stroke-width=".7"/>'}
+else if(o.t<.96){var n=7,span=2.4,rr=o.s*1.25;for(var k=0;k<n;k++){var a1=-span/2+span*k/n,a2=-span/2+span*(k+1)/n;s+='<polygon points="'+P(0,0)+" "+P(Math.cos(a1)*rr,Math.sin(a1)*rr)+" "+P(Math.cos(a2)*rr,Math.sin(a2)*rr)+'" fill="'+sh(c,k%2?-.25:.18)+'"/>'}}
+else{s+='<path d="M'+P(-o.s,0)+"Q"+P(0,-o.s*.9)+" "+P(o.s*1.1,o.s*.2)+'" fill="none" stroke="'+sh(c,.1)+'" stroke-width="'+(o.s*.16).toFixed(1)+'" stroke-linecap="round"/>'}
+});
+s+='</g><g id="static"></g><g id="shadows" filter="url(#shf)" opacity=".1"></g><g id="fly"></g>';
+svg.innerHTML=s;
+function el(n,p,at){var e=document.createElementNS(NS,n);for(var k in at)e.setAttribute(k,at[k]);p.appendChild(e);return e}
+var BODY=[[[-16,-2],[10,-12],[30,0],[6,10]],"b",[[-16,-2],[6,10],[30,0],[8,3]],"d",[[24,-2],[50,-16],[30,4]],"b",[[-16,-2],[-30,-24],[-26,-26],[-8,-8]],"b",[[-30,-24],[-46,-16],[-26,-26]],"d"];
+var FAR=[[-10,-6],[14,-7],[-2,-42]],NEAR=[[-6,-8],[22,-10],[34,-50]],NEARF=[[-6,-8],[34,-50],[8,-30]];
+function wing(pts,a,b,fold){var dx=b[0]-a[0],dy=b[1]-a[1],l=Math.hypot(dx,dy),nx=-dy/l,ny=dx/l;return pts.map(function(q){var d=((q[0]-a[0])*nx+(q[1]-a[1])*ny)*(fold-1);return(q[0]+nx*d).toFixed(2)+","+(q[1]+ny*d).toFixed(2)}).join(" ")}
+function pts(a){return a.map(function(q){return q[0]+","+q[1]}).join(" ")}
+function crane(parent,shParent,col,fill){
+var g=el("g",parent,{}),sg=shParent?el("g",shParent,{}):null,ws=[];
+function add(kind,pp,fl,wing_){var p=el("polygon",g,{fill:fl,points:pts(pp)}),q=sg?el("polygon",sg,{fill:"rgb(22,43,68)",points:pts(pp)}):null;if(wing_)ws.push({p:p,q:q,pp:pp,k:wing_});return p}
+add("far",FAR,col.far,"far");
+for(var i=0;i<BODY.length;i+=2)add("body",BODY[i],BODY[i+1]=="b"?col.body:col.belly);
+add("near",NEAR,col.near,"near");add("nf",NEARF,sh(col.near.length==7?col.near:"#ffffff",-.07),"nf");
+function set(fold){ws.forEach(function(w){var a=w.k=="far"?[-10,-6]:[-6,-8],b=w.k=="far"?[14,-7]:[22,-10],v=wing(w.pp,a,b,fold);w.p.setAttribute("points",v);if(w.q)w.q.setAttribute("points",v)})}
+set(.8);return{g:g,sg:sg,set:set}}
+var ST=svg.querySelector("#static"),CR=[{near:"#ffffff",far:"#f1dfd0",body:"#f7ead9",belly:"#e4c3ac"},{near:"#ff3b2f",far:"#ffd9c9",body:"#e8271f",belly:"#b81610"},{near:"#ffc21a",far:"#e39a00",body:"#f5b000",belly:"#c98400"},{near:"#ff7a2e",far:"#ffd0a8",body:"#e0541a",belly:"#ad3a0e"},{near:"#fff3e0",far:"#e8c0d0",body:"#f3d6d6",belly:"#d9a8b4"}];
+var q=rng(21);
+for(i=0;i<26;i++){var fy=.38+q()*.62,xx=L(fy)*1920+40+q()*(1960-L(fy)*1920),w=(55+q()*(60+130*fy))/100,c=crane(ST,null,CR[q()*5|0]);c.set(.35+q()*.65);c.g.setAttribute("transform","translate("+xx.toFixed(0)+" "+(fy*1080).toFixed(0)+") rotate("+(q()*50-25).toFixed(0)+") scale("+(q()<.2?-w:w)+" "+w+")")}
+var SH=svg.querySelector("#shadows"),FLY=svg.querySelector("#fly");
+var FL=[{st:.35,w:82,d:0,ph:0,fr:1.5,c:CR[0]},{st:1.1,w:72,d:-14,ph:1.1,fr:1.7,c:CR[1]},{st:1.85,w:62,d:-25,ph:2.2,fr:1.9,c:CR[2]}].map(function(o){
+var sw=el("g",SH,{}),sc=crane(FLY,sw,o.c),swc=sc;o.sg=sw;o.c=sc;return o});
+function frame(t){FL.forEach(function(o){var p=(t-o.st)/9,on=p>=0&&p<=1;o.c.g.style.display=on?"":"none";o.sg.style.display=on?"":"none";if(!on)return;
+var x=1920+130-2180*p,y=180+150*Math.pow(Math.sin(Math.PI*p),2)+o.d+2*Math.sin(4*Math.PI*p+o.ph),an=1.5*Math.sin(2*Math.PI*p+o.ph),fold=.63+.37*Math.cos(2*Math.PI*o.fr*(t-o.st)+o.ph),sc=o.w/100;
+o.c.set(fold);
+o.c.g.setAttribute("transform","translate("+x.toFixed(2)+" "+y.toFixed(2)+") rotate("+an.toFixed(2)+") scale("+sc+")");
+o.c.sg.setAttribute("transform","translate("+(x+2.5).toFixed(2)+" "+(y+5).toFixed(2)+") rotate("+an.toFixed(2)+") scale("+sc+")")})}
+var raf=0;function loop(n){frame((n/1000)%12);raf=requestAnimationFrame(loop)}
+function motion(){cancelAnimationFrame(raf);if(reduce.matches){FL.forEach(function(o){o.c.g.style.display="none";o.sg.style.display="none"})}else raf=requestAnimationFrame(loop)}
+reduce.addEventListener("change",motion);motion();
+if(reduce.matches)document.documentElement.classList.remove("js-entrance");else setTimeout(function(){document.documentElement.classList.remove("js-entrance")},2000);
+
+var PRJ=[["Fold Lab","LEGO Rush","M3 10 10 2 19 7 12 13 5 13Z M5 13 12 19 20 11 19 7 M10 2 12 13","https://legorush.vercel.app"],["Kinetic Works","Lucky Slots","M2 7 8 2 14 2 8 7Z M5 13 11 8 20 8 14 13Z M9 20 15 14 21 14 15 20Z","https://slot-machine-slotmachine.vercel.app"],["Material Studies","Buzin’s Diner","M3 19 12 4 21 19 M12 4V19 M5 9 19 19 M19 9 5 19 M2 19H22","https://buzin-sdiner-ashen.vercel.app"],["Web Slinger","Spider-Man","M12 2V22 M2 12H22 M4.9 4.9 19.1 19.1 M19.1 4.9 4.9 19.1 M7 2 9 7 12 9 15 7 17 2 M2 7 7 9 9 12 7 15 2 17 M22 7 17 9 15 12 17 15 22 17 M7 22 9 17 12 15 15 17 17 22","https://spiderman-orpin-delta.vercel.app"]];
+var pl=document.getElementById("plogos");
+PRJ.forEach(function(p,i){var d=document.createElement("a");d.className="pl pl-"+(i+1);d.setAttribute("data-e","");d.style.cssText="--d:"+(1.06+i*.05)+"s;--r:8px";d.setAttribute("aria-label",p[1]+(p[3]?" — open project":" — view project details"));if(p[3]){d.href=p[3];d.target="_blank";d.rel="noopener"}else{d.href="#projects";d.setAttribute("data-preview","projects")}d.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="'+p[2]+'"/></svg><span>'+p[1]+"</span>";pl.appendChild(d)});
+
+function L2(a){return"<ul>"+a.map(function(p){return"<li>"+p[0]+": <a href=\""+p[1]+"\" target=\"_blank\" rel=\"noopener\">Live</a> · <a href=\""+p[2]+"\" target=\"_blank\" rel=\"noopener\">GitHub</a></li>"}).join("")+"</ul>"}
+var C={
+contact:["Get in Touch","<p>Open to entry-level roles in IT support, network administration, cybersecurity, and web or software development.</p><ul><li><a href=\"mailto:anubhabmukherjee87@gmail.com\">anubhabmukherjee87@gmail.com</a></li><li><a href=\"https://github.com/buzin8\" target=\"_blank\" rel=\"noopener\">GitHub: buzin8</a></li><li>Kolkata, West Bengal</li></ul>"],
+about:["About","<p>B.Tech graduate in Electronics and Communication Engineering. I build interactive web projects and embedded prototypes, and I picked up networking and cybersecurity basics through an internship. Languages: English, Bengali, Hindi.</p>"],
+experience:["Experience","<p><strong>Information Systems Intern</strong>, Haldia Petrochemicals Limited, Kolkata. July to August 2025.</p><ul><li>Studied IP addressing, routing, switching, DNS and DHCP, with exposure to routine IT support.</li><li>Assisted with basic network troubleshooting and documenting user-facing issues.</li><li>Learned vulnerability assessment and security best practices; prepared technical reports.</li></ul>"],
+projects:["Projects",L2([["Pepsi landing page","https://pepsi-ten-jet.vercel.app/","https://github.com/buzin8/pepsi"],["Starbucks landing page","http://starbucks-buzin.vercel.app/","https://github.com/buzin8/starbucks"],["Spider-Man cinematic fan page","https://spiderman-orpin-delta.vercel.app/","https://github.com/buzin8/Spiderman"],["LEGO Rush, endless runner","https://legorush.vercel.app","https://github.com/buzin8/LEGO_RUSH"],["Buzin’s Diner","https://buzin-sdiner-ashen.vercel.app/","https://github.com/buzin8/BUZIN-S_DINER"],["Lucky Slots","https://slot-machine-slotmachine.vercel.app","https://github.com/buzin8/SLOT_-MACHINE"]])+"<p style=\"margin-top:14px\">Capstone: low-cost ECG monitor with ESP32 and AD8232.</p>"],
+skills:["Skills","<ul><li>Web: JavaScript, Python, C++, SQL, HTML, CSS, Flask, Three.js</li><li>Embedded: ESP32, AD8232, Arduino IDE, serial communication</li><li>Networking: IP addressing, routing, switching, DNS, DHCP, troubleshooting</li><li>Tools: Git, GitHub, Vercel</li></ul>"],
+education:["Education","<p><strong>B.Tech, Electronics and Communication Engineering</strong><br>RCC Institute of Information Technology, Kolkata<br>Graduated July 2026, CGPA 7.15</p>"]};
+var dlg=document.getElementById("previewDialog"),btn=document.getElementById("menuBtn"),nav=document.getElementById("nav"),cb=document.getElementById("dialogClose"),mq=matchMedia("(max-aspect-ratio:1/1)"),last=null,downOut=false;
+function menu(o,f){nav.classList.toggle("open",o);btn.setAttribute("aria-expanded",o);btn.setAttribute("aria-label",o?"Close menu":"Open menu");if(o&&f)nav.querySelector("a").focus()}
+btn.addEventListener("click",function(e){menu(!nav.classList.contains("open"),e.detail===0)});
+nav.addEventListener("click",function(e){if(e.target.closest("a"))menu(false)});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&nav.classList.contains("open")&&!dlg.open){menu(false);btn.focus()}});
+document.addEventListener("pointerdown",function(e){if(nav.classList.contains("open")&&!nav.contains(e.target)&&!btn.contains(e.target))menu(false)});
+document.querySelector(".head").addEventListener("focusout",function(){setTimeout(function(){var a=document.activeElement;if(nav.classList.contains("open")&&!nav.contains(a)&&a!==btn&&!dlg.open)menu(false)},0)});
+mq.addEventListener("change",function(){menu(false)});
+document.querySelectorAll("[data-preview]").forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();var d=C[a.dataset.preview];last=a;menu(false);document.getElementById("dialogTitle").textContent=d[0];document.getElementById("dialogBody").innerHTML=d[1];dlg.showModal();cb.focus()})});
+cb.addEventListener("click",function(){dlg.close()});
+dlg.addEventListener("close",function(){if(!last)return;var hidden=!last.getClientRects().length;if(!hidden)last.focus();else if(nav.contains(last)&&mq.matches){menu(true);last.focus()}else btn.focus()});
+dlg.addEventListener("keydown",function(e){if(e.key!=="Tab")return;var f=dlg.querySelectorAll("a[href],button"),a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}});
+function out(e){var r=dlg.getBoundingClientRect();return e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom}
+dlg.addEventListener("pointerdown",function(e){downOut=out(e)});
+dlg.addEventListener("click",function(e){if(downOut&&out(e))dlg.close();downOut=false});
+if("IntersectionObserver" in window){
+var revealObserver=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(!entry.isIntersecting)return;entry.target.classList.add("is-visible");revealObserver.unobserve(entry.target)})},{threshold:.12,rootMargin:"0px 0px -5% 0px"});
+document.querySelectorAll(".scroll-reveal").forEach(function(el){revealObserver.observe(el)});
+}else document.documentElement.classList.remove("js-scroll-reveal");
+})();
+</script>
+</body>
+</html>
